@@ -58,6 +58,27 @@
         </div>
     </div>
 
+    <div id="share_options" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Share options</h2>
+                <p><span id="status"></span></p>
+            </div>
+            
+            <h4>Url</h4>
+            <div class="options">
+                <div class="url_container">
+                    <p><span id="url"></span></p>
+                </div>
+            </div>
+            <div class="btn_options">
+                <button id="btn_save_link_txt" onclick="save_as_txt()"><img src="static/icon-share.svg" class="svg-image">Save as txt</button>
+                <button id="btn_copy_link_clipboard" onclick="copy_to_clipboard()"><img src="static/icon-share.svg" class="svg-image">Copy to clipboard</button>    
+            </div>
+        </div>
+    </div>
+
 
     <!-- -->
     <script id='engine-loader' type='text/javascript' src="dmloader.js"></script>
