@@ -191,6 +191,19 @@ function codepad_change_scene() {
     }
 }
 
+
+// Set selected scene in the html drop down
+function codepad_set_selected_scene(scene_id) {
+    var scenes_elem = document.getElementById("scene");
+    var scene_options = scenes_elem.options;
+    for (var option, i = 0; option = scene_options[i]; i++) {
+        if (option.value == scene_id) {
+            scenes_elem.selectedIndex = i;
+            break;
+        }
+    }
+}
+
 /**
  * Called by Defold when the codepad is ready for use. This will do two things:
  * 1. Check if this codepad was started from a link containing code or from scratch
